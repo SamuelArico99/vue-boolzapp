@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(236,228,228);
+    background: linear-gradient(0deg, rgba(236,228,228,1) 0%, rgba(255,255,255,1) 90%, rgba(9,121,105,1) 10%);
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: 90%;
+    border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+}
+.contacts{
+    width: 30%;
+    height: 100%;
+    border: 1px solid yellow;
+}
+.chat{
+    width: 70%;
+    height: 100%;
+    border: 1px solid red;
+}
+.contacts header{
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+}
+.contacts header img {
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
