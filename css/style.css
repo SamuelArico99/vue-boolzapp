@@ -37,11 +37,21 @@ body{
     height: 70px;
     border: 1px solid black;
     display: flex;
+    justify-content: space-between;
+}
+.contacts header div{
+    display: flex;
+    align-items: center;
 }
 .contacts header img {
     width: 50px;
     margin-top: 5px;
     margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.contacts header i{
+    margin-right: 5px;
 }
 
 
