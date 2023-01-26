@@ -37,10 +37,10 @@
                 <input type="search" placeholder="   Cerca o inizia una nuova chat">
             </div>
             <div class="list-contacts">
-                <div class="contact">
+                <div class="contact" v-for="contact in contacts">
                     <div>
-                        <img src="img/avatar_io.jpg" alt="">
-                        <span>Sofia <br><span class="last-message">Ultimo messaggio inviato</span></span>
+                        <img :src="'img/avatar'+ contact.avatar+ '.jpg'" :alt="contact.name">
+                        <span>{{contact.name}} <br><span class="last-message">Ultimo messaggio inviato</span></span>
                     </div>
     
                     <span class="last-access">12:00</span>
@@ -61,20 +61,17 @@
                 </div>
             </header>
             <main>
-                <div class="row">
-                    <div class="message-sent">
-
-                    </div>
+                <div class="message-sent">
+                    ciao
                 </div>
-                <div class="row">
-                    <div class="message-received">
 
-                    </div>
+                <div class="message-received">
+                    come stai
                 </div>
             </main>
             <footer>
                 <i class="fa-regular fa-face-smile"></i>
-                <input type="text">
+                <input type="text" placeholder="  Scrivi un messaggio">
                 <i class="fa-solid fa-microphone"></i>
 
             </footer>
