@@ -61,8 +61,8 @@
                 </div>
             </header>
             <main>
-                <div class="message-sent">
-                    ciao
+                <div class="message-sent" v-for="message in messages">
+                    {{contacts[currentContact].messages.message}}
                 </div>
 
                 <div class="message-received">
