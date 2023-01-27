@@ -62,8 +62,11 @@ body{
     color: rgba(175,176,177,255);
 }
 .contact{
-    padding: 40px 0;
-    margin: 35px 0;
+    padding: 60px 0;
+}
+.contact:hover{
+    cursor: pointer;
+    background-color: lightgray;
 }
 .chat header{
     width: 100%;
@@ -117,6 +120,7 @@ body{
     height: 40px;
 }
 .research input{
+    padding: 10px;
     width: 90%;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -140,11 +144,14 @@ body{
     flex-direction: column;
 }
 .message{
-    background-color: white;
     width: 30%;
     padding: 15px;
     border-radius: 10px;
     margin: 15px 0;
+    display: flex;
+}
+.received{
+    background-color: white;
 }
 .sent{
     align-self: flex-end;
@@ -159,6 +166,7 @@ body{
     background-color: rgba(243,238,234,255);
 }
 .chat footer input{
+    padding: 10px;
     width: 90%;
     border: 0.5px solid lightgrey;
     border-radius: 5px;
