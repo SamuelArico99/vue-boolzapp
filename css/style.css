@@ -52,7 +52,7 @@ body{
 }
 .contacts header img, .contact img {
     width: 50px;
-    margin-left: 5px;
+    margin:0 10px;
     border-radius: 50%;
 }
 .contacts header i{
