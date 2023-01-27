@@ -139,18 +139,16 @@ body{
     display: flex;
     flex-direction: column;
 }
-.message-sent{
+.message{
+    background-color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.sent{
     align-self: flex-end;
     background-color: rgba(213,249,187,255);
-    width: 30%;
-    padding: 15px;
-    border-radius: 10px;
-}
-.message-received{
-    width: 30%;
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
 }
 .chat footer{
     height: 10%;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,15 @@
     <title>Vue Boolzapp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Noto+Sans:wght@100;400;700&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Noto+Sans:wght@100;400;700&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="app" class="container">
         <div class="contacts">
@@ -26,11 +32,11 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </header>
-            
+
             <div class="notifications">
                 <i class="fa-solid fa-bell-slash"></i>
                 <span>Ricevi notifiche dei messaggi <br><a href="">Attiva notifiche desktop</a></span>
-                
+
             </div>
             <div class="research">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -42,7 +48,7 @@
                         <img :src="'img/avatar'+ contact.avatar+ '.jpg'" :alt="contact.name">
                         <span>{{contact.name}} <br><span class="last-message">Ultimo messaggio inviato</span></span>
                     </div>
-    
+
                     <span class="last-access">12:00</span>
                 </div>
             </div>
@@ -61,12 +67,8 @@
                 </div>
             </header>
             <main>
-                <div class="message-sent" v-for="message in messages">
-                    {{contacts[currentContact].messages.message}}
-                </div>
-
-                <div class="message-received">
-                    come stai
+                <div class="message " v-for="sms in contacts[currentContact].messages">
+                    {{sms.message}}
                 </div>
             </main>
             <footer>
@@ -80,4 +82,5 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
