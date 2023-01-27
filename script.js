@@ -186,13 +186,18 @@ createApp({
       this.contacts[this.currentContact].messages.push(newMessageObj);
       this.newMessage = '';
 
+      setTimeout(this.responseMessage,2000);
+
+    },
+
+    responseMessage: function () {
       const receivedMessageObj = {
         date: '10/01/2020 15:51:00',
         message: 'ok',
         status: 'received'
       };
       this.contacts[this.currentContact].messages.push(receivedMessageObj);
-
+      
     }
   }
 
