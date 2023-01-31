@@ -40,10 +40,10 @@
             </div>
             <div class="research">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="search" placeholder="Cerca o inizia una nuova chat">
+                <input type="search" placeholder="Cerca o inizia una nuova chat" v-model="userSearch" @keyup.enter ="searchContact()">
             </div>
             <div class="list-contacts">
-                <div class="contact" v-for="(contact,index) in contacts" @click="changeChat(index)">
+                <div class="contact" v-for="(contact,index) in contacts" @click="changeChat(index)" :class="{show : contact.visible}">
                     <div>
                         <img :src="'img/avatar'+ contact.avatar+ '.jpg'" :alt="contact.name">
                         <span>{{contact.name}} <br><span class="last-message">Ultimo messaggio inviato</span></span>
