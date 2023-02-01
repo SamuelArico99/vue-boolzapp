@@ -40,10 +40,12 @@
             </div>
             <div class="research">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="search" placeholder="Cerca o inizia una nuova chat" v-model="userSearch" @keyup.enter ="searchContact()">
+                <input type="search" placeholder="Cerca o inizia una nuova chat" v-model="userSearch"
+                    @keyup="searchContact()">
             </div>
             <div class="list-contacts">
-                <div class="contact" v-for="(contact,index) in contacts" @click="changeChat(index)" :class="{show : contact.visible}">
+                <div class="contact" v-for="(contact,index) in contacts" @click="changeChat(index)"
+                    :class="{'hide' : !contact.visible}">
                     <div>
                         <img :src="'img/avatar'+ contact.avatar+ '.jpg'" :alt="contact.name">
                         <span>{{contact.name}} <br><span class="last-message">Ultimo messaggio inviato</span></span>
@@ -57,7 +59,8 @@
             <header>
                 <div>
                     <img :src="'img/avatar'+ contacts[currentContact].avatar+ '.jpg'" alt="">
-                    <span>{{contacts[currentContact].name}} <br><span class="last-access">Ultimo accesso oggi alle 12:00</span></span>
+                    <span>{{contacts[currentContact].name}} <br><span class="last-access">Ultimo accesso oggi alle
+                            12:00</span></span>
                 </div>
 
                 <div>
@@ -67,7 +70,8 @@
                 </div>
             </header>
             <main>
-                <div v-bind:class="sms.status=='sent' ? 'sent' : 'received'" class="message " v-for="sms in contacts[currentContact].messages">
+                <div v-bind:class="sms.status=='sent' ? 'sent' : 'received'" class="message "
+                    v-for="sms in contacts[currentContact].messages">
                     {{sms.message}}
                 </div>
             </main>

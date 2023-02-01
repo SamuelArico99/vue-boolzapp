@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background: rgb(211,219,221);
-    background: linear-gradient(0deg, rgba(211,219,221,1) 0%, rgba(255,255,255,1) 90%, rgba(9,121,105,1) 10%);
+    background: rgb(211, 219, 221);
+    background: linear-gradient(0deg, rgba(211, 219, 221, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(9, 121, 105, 1) 10%);
     width: 100%;
     height: 90vh;
 
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
     height: 80%;
@@ -22,60 +24,78 @@ body{
     display: flex;
     background-color: white;
 }
-.list-contacts{
+
+.list-contacts {
     height: calc(80% - 54px);
     overflow-y: auto;
 }
-.contacts{
+
+.contacts {
     width: 30%;
     height: 100%;
 }
-.chat{
+
+.chat {
     width: 70%;
     height: 100%;
 }
-.contacts header, .contact{
+
+.contacts header,
+.contact {
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-between;
 }
-.contacts header{
+
+.contacts header {
     border-right: 1px solid lightgrey;
 }
-.contacts header, .chat header{
-    background-color: rgba(234,234,234,255);
+
+.contacts header,
+.chat header {
+    background-color: rgba(234, 234, 234, 255);
 }
-.contacts header div, .contact div{
+
+.contacts header div,
+.contact div {
     display: flex;
     align-items: center;
 }
-.contacts header img, .contact img {
+
+.contacts header img,
+.contact img {
     width: 50px;
-    margin:0 10px;
+    margin: 0 10px;
     border-radius: 50%;
 }
-.contacts header i{
+
+.contacts header i {
     margin-right: 15px;
-    color: rgba(175,176,177,255);
+    color: rgba(175, 176, 177, 255);
 }
-.contact{
+
+.contact {
     padding: 60px 0;
 }
-.contact:hover{
+
+.contact:hover {
     cursor: pointer;
     background-color: lightgray;
 }
-.chat header{
+
+.chat header {
     width: 100%;
     height: 10%;
     display: flex;
     justify-content: space-between;
 }
-.chat header div{
+
+.chat header div {
     display: flex;
     align-items: center;
 }
+
 .chat header img {
     width: 50px;
     margin-top: 5px;
@@ -83,41 +103,51 @@ body{
     margin-right: 5px;
     border-radius: 50%;
 }
-.chat header i{
+
+.chat header i {
     margin-right: 15px;
-    color: rgba(175,176,177,255);
+    color: rgba(175, 176, 177, 255);
 }
-.last-access,.last-message{
+
+.last-access,
+.last-message {
     color: gray;
     font-size: 13px;
     padding-top: 5px;
     padding-right: 5px;
 }
-.notifications{
+
+.notifications {
     height: 10%;
     display: flex;
     align-items: center;
-    background-color: rgba(142,218,252,255);
+    background-color: rgba(142, 218, 252, 255);
 }
-.notifications i{
+
+.notifications i {
     margin: 0 5px;
     padding: 15px;
     background-color: white;
     border-radius: 50%;
-    color: rgba(142,218,252,255);
+    color: rgba(142, 218, 252, 255);
 }
-.notifications a{
-    color:#407f98;
+
+.notifications a {
+    color: #407f98;
     font-size: 13px;
 }
-.research{
+
+.research {
     padding: 7px;
-    background-color:rgba(251,251,251,255);
+    background-color: rgba(251, 251, 251, 255);
 }
-.research button, input{
+
+.research button,
+input {
     height: 40px;
 }
-.research input{
+
+.research input {
     padding: 10px;
     width: 90%;
     border-top-right-radius: 5px;
@@ -127,13 +157,15 @@ body{
     border-right: 0.5px solid lightgrey;
     border-bottom: 0.5px solid lightgrey;
 }
-.research button{
+
+.research button {
     width: 10%;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 0.5px solid lightgrey;
 }
-.chat main{
+
+.chat main {
     background-image: url('../img/mine.jpg');
     height: 80%;
     padding: 40px;
@@ -141,36 +173,45 @@ body{
     display: flex;
     flex-direction: column;
 }
-.message{
+
+.message {
     width: 30%;
     padding: 15px;
     border-radius: 10px;
     margin: 15px 0;
     display: flex;
 }
-.received{
+
+.received {
     background-color: white;
 }
-.sent{
+
+.sent {
     align-self: flex-end;
-    background-color: rgba(213,249,187,255);
+    background-color: rgba(213, 249, 187, 255);
 }
-.chat footer{
+
+.chat footer {
     height: 10%;
     display: flex;
     padding: 5px;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(243,238,234,255);
+    background-color: rgba(243, 238, 234, 255);
 }
-.chat footer input{
+
+.chat footer input {
     padding: 10px;
     width: 90%;
     border: 0.5px solid lightgrey;
     border-radius: 5px;
 }
-.chat footer i{
+
+.chat footer i {
     margin: 0 10px;
-    color: rgba(105,114,120,255);
+    color: rgba(105, 114, 120, 255);
 }
 
+.hide {
+    display: none;
+}

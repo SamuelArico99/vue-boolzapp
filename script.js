@@ -5,7 +5,6 @@ createApp({
     return {
       currentContact: 0,
       newMessage: '',
-      userSearch: '',
       contacts: [
         {
           name: 'Michele',
@@ -171,8 +170,8 @@ createApp({
       ]
     }
   },
-  methods:{
-    changeChat: function(i) {
+  methods: {
+    changeChat: function (i) {
 
       this.currentContact = i;
 
@@ -187,7 +186,7 @@ createApp({
       this.contacts[this.currentContact].messages.push(newMessageObj);
       this.newMessage = '';
 
-      setTimeout(this.responseMessage,2000);
+      setTimeout(this.responseMessage, 2000);
 
     },
 
@@ -198,23 +197,23 @@ createApp({
         status: 'received'
       };
       this.contacts[this.currentContact].messages.push(receivedMessageObj);
-      
+
     },
 
     searchContact: function () {
       for (let i = 0; i < this.contacts.length; i++) {
         let position = this.contacts[i].name.toLowerCase();
-        let searchResult = position.search(this.userSearch);
+        let searchResult = position.search(this.userSearch.toLowerCase());
 
-        if (searchResult != 0) {
-          this.contacts[i].visible = false;
-        }
-        else {
+        if (searchResult != -1) {
           this.contacts[i].visible = true;
         }
-        
+        else {
+          this.contacts[i].visible = false;
+        }
+
       }
-      this.userSearch = '';
+
 
     }
   }
